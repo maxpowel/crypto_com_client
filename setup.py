@@ -4,7 +4,7 @@ with open('requirements.txt') as fp:
     install_requires = [f for f in fp.readlines() if not f.startswith("-") and not f.startswith("#")]
 
 setup(
-    name='crypto_com',
+    name='crypto_com_client',
     packages=find_packages(),
     version='0.1',
     description='Crypto.com websocket api client',

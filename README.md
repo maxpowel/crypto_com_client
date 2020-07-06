@@ -11,7 +11,7 @@ There two kinds of `apis`, the `user` and `market`. You can specify which one to
 
 Before use the library, you have to install it:
 ```bash
-pip install crypto_com
+pip install crypto_com_client
 ```
 
 The most simple example, subscribing to an `orderbook`:
