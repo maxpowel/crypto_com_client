@@ -6,10 +6,10 @@ Check the official documentation https://exchange-docs.crypto.com/ and the examp
 
 Getting started
 ---------------
-There two kinds of `apis`, the `user` and `market`. You can specify which one to use by using the `client_type`. The 
+There are two kinds of `apis`, the `user` and `market`. You can specify which one to use by using the `client_type`. The 
 `user` type requires to create api credentials (access and secret key)
 
-Before use the library, you have to install it:
+Before using the library, you have to install it:
 ```bash
 pip install crypto_com_client
 ```
