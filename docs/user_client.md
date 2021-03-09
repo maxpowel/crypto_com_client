@@ -1,4 +1,4 @@
-# Market Client
+# User Client
 
 You can use this client to access the public data. You can subscribe to tickers, trades...
 
