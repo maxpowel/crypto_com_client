@@ -53,6 +53,11 @@ class CryptoClient:
         next_message = None
         while next_message is None:
             next_message = loads(await self.websocket.recv())
+            if next_message.get("method") == "public/heartbeat":
+                next_message["method"] = "public/respond-heartbeat"
+                logging.info("Heartbeat")
+                await self.send(next_message)
+                next_message = None
         return next_message
 
     async def __aenter__(self):

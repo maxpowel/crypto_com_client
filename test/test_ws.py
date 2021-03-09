@@ -85,3 +85,20 @@ async def authenticate():
 
 def test_authenticate():
     run_t(server=authenticate_server, test_code=authenticate)
+
+
+async def heartbeat_server(websocket, path):
+    await websocket.send(json.dumps({"method": "public/heartbeat"}))
+    heartbeat_response = json.loads(await websocket.recv())
+    assert heartbeat_response["method"] == "public/respond-heartbeat"
+    await websocket.send(json.dumps({"method": "close"}))
+    await websocket.close()
+
+
+async def heartbeat():
+    async with CryptoClient(api_url="ws://localhost:8765") as client:
+        response = await client.next_event()
+
+
+def test_heartbeat():
+    run_t(server=heartbeat_server, test_code=heartbeat)
