@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "crypto_com_client"
+version = "0.1.1"
+description = "Crypto.com websocket api client"
+authors = ["Alvaro Garcia <maxpowel@gmail.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/maxpowel/crypto_com_client"
+readme = "README.md"
+repository = "https://github.com/maxpowel/crypto_com_client"
+documentation = "https://github.com/maxpowel/crypto_com_client"
+keywords = ['websocket', 'client', 'crypto']
+classifiers = ['Topic :: Adaptive Technologies', 'Topic :: Software Development', 'Topic :: System', 'Topic :: Utilities']
+packages = [
+    { include = "crypto_com" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+websockets = "^8.1"
+orjson = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

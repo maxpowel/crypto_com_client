@@ -1,0 +1,71 @@
+[[package]]
+name = "orjson"
+version = "3.5.1"
+description = "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "websockets"
+version = "8.1"
+description = "An implementation of the WebSocket Protocol (RFC 6455 & 7692)"
+category = "main"
+optional = false
+python-versions = ">=3.6.1"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "35e1959d62447f0e43b8cbc16df0a169b004d6f6cf8b5cce69e4460686b6529d"
+
+[metadata.files]
+orjson = [
+    {file = "orjson-3.5.1-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:5b957e2e76e3ec69d1d80e11357106c08a8ed0621ddecb43fa93d0c9de918039"},
+    {file = "orjson-3.5.1-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:4d1fd69f464af720c50e165df7aa1bd92de2ad6fbe8627530964f41364c67c4c"},
+    {file = "orjson-3.5.1-cp36-cp36m-macosx_10_7_x86_64.whl", hash = "sha256:98eab6062782589acb08286cac5e3c0cf48f124aad62baf7092fd4a3865c19c8"},
+    {file = "orjson-3.5.1-cp36-cp36m-macosx_10_9_universal2.whl", hash = "sha256:471ea002ea42717b5f60b607bc08da5be6f21d601feef49fdf45c8763352f771"},
+    {file = "orjson-3.5.1-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:8f26cb5fc8f381767c79b1ff216fe0d5dd3b25222fcc03a9da09837bc570ebf7"},
+    {file = "orjson-3.5.1-cp36-cp36m-manylinux2014_x86_64.whl", hash = "sha256:48622b3e6f3b619bd13a1a2d4ae217a75d2cf55461f895c70b71514b18a9021f"},
+    {file = "orjson-3.5.1-cp36-none-win_amd64.whl", hash = "sha256:458046c376299f79f074e14d408addb71a05a1b51a80257aa06d03693cf503e0"},
+    {file = "orjson-3.5.1-cp37-cp37m-macosx_10_7_x86_64.whl", hash = "sha256:3c9a03494cfef411f3c572ede2b83eda00ebe0860edb06385dabc18d4a4dd0d7"},
+    {file = "orjson-3.5.1-cp37-cp37m-macosx_10_9_universal2.whl", hash = "sha256:c9270e8fa3976bf2f0c93716f38138ced8fd9c791400ccc62fe662f2759c7c74"},
+    {file = "orjson-3.5.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:bc7b3a0eff0c5f4fda48db9595dda55de502c6c804b78ac840bdf0aa17f80717"},
+    {file = "orjson-3.5.1-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:5093a04c9e9b0489fc30b110b4aab2ed604409991c6b64e4707e25d954749e31"},
+    {file = "orjson-3.5.1-cp37-none-win_amd64.whl", hash = "sha256:45c0fb870d5b9c8d80e1ba3d28c61af5645c3f367cf03104e098dc702b6f5c48"},
+    {file = "orjson-3.5.1-cp38-cp38-macosx_10_7_x86_64.whl", hash = "sha256:0e5bf106d4f45473ae65b7b40ec10bdd887f284b1548aa837ab7ce8e3c8b6684"},
+    {file = "orjson-3.5.1-cp38-cp38-macosx_10_9_universal2.whl", hash = "sha256:12e9f02e782db06b13b636227eb007f2a844f445ae5c643d7715df547aa08c17"},
+    {file = "orjson-3.5.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:6f718de6f088c1d06035c72c25431e558fbb66f7fcf13bee680181a670858d25"},
+    {file = "orjson-3.5.1-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:19fe12ad37ab0598e39d254249c704a065f32b31659679d07eeb32e5f5edc500"},
+    {file = "orjson-3.5.1-cp38-none-win_amd64.whl", hash = "sha256:06ff7ab5b639fc6dcb2ace5f6678dc24dda8e92d7ded5d29c29b655776f5c518"},
+    {file = "orjson-3.5.1-cp39-cp39-macosx_10_7_x86_64.whl", hash = "sha256:706b83d288cb8477d6ae88fe22feab2db4f3527031ee39ca4170ddaf87ed0200"},
+    {file = "orjson-3.5.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:58ac211588da62cb525d7e7c4b16c50a9c6624cc77e51ee60735dc935a3cd1da"},
+    {file = "orjson-3.5.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:430a615d20908f223a24f8ee3e057111659434b5f102580d8574d220b5d7cd17"},
+    {file = "orjson-3.5.1-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:8b0129cbedccecac931c72802fed48172eb8b0eb94089844af17c6cdfc85c997"},
+    {file = "orjson-3.5.1-cp39-none-win_amd64.whl", hash = "sha256:dacb683e24187b45df7ccd7fb3ff43368f376e5b065a566f33e61765bb8a1cdd"},
+    {file = "orjson-3.5.1.tar.gz", hash = "sha256:7d3c4179d7af8a39fa1e3b4125155e866e09b24e477c7663ef951dcb6d8ee97d"},
+]
+websockets = [
+    {file = "websockets-8.1-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:3762791ab8b38948f0c4d281c8b2ddfa99b7e510e46bd8dfa942a5fff621068c"},
+    {file = "websockets-8.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:3db87421956f1b0779a7564915875ba774295cc86e81bc671631379371af1170"},
+    {file = "websockets-8.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:4f9f7d28ce1d8f1295717c2c25b732c2bc0645db3215cf757551c392177d7cb8"},
+    {file = "websockets-8.1-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:295359a2cc78736737dd88c343cd0747546b2174b5e1adc223824bcaf3e164cb"},
+    {file = "websockets-8.1-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:1d3f1bf059d04a4e0eb4985a887d49195e15ebabc42364f4eb564b1d065793f5"},
+    {file = "websockets-8.1-cp36-cp36m-win32.whl", hash = "sha256:2db62a9142e88535038a6bcfea70ef9447696ea77891aebb730a333a51ed559a"},
+    {file = "websockets-8.1-cp36-cp36m-win_amd64.whl", hash = "sha256:0e4fb4de42701340bd2353bb2eee45314651caa6ccee80dbd5f5d5978888fed5"},
+    {file = "websockets-8.1-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:9b248ba3dd8a03b1a10b19efe7d4f7fa41d158fdaa95e2cf65af5a7b95a4f989"},
+    {file = "websockets-8.1-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:ce85b06a10fc65e6143518b96d3dca27b081a740bae261c2fb20375801a9d56d"},
+    {file = "websockets-8.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:965889d9f0e2a75edd81a07592d0ced54daa5b0785f57dc429c378edbcffe779"},
+    {file = "websockets-8.1-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:751a556205d8245ff94aeef23546a1113b1dd4f6e4d102ded66c39b99c2ce6c8"},
+    {file = "websockets-8.1-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:3ef56fcc7b1ff90de46ccd5a687bbd13a3180132268c4254fc0fa44ecf4fc422"},
+    {file = "websockets-8.1-cp37-cp37m-win32.whl", hash = "sha256:7ff46d441db78241f4c6c27b3868c9ae71473fe03341340d2dfdbe8d79310acc"},
+    {file = "websockets-8.1-cp37-cp37m-win_amd64.whl", hash = "sha256:20891f0dddade307ffddf593c733a3fdb6b83e6f9eef85908113e628fa5a8308"},
+    {file = "websockets-8.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c1ec8db4fac31850286b7cd3b9c0e1b944204668b8eb721674916d4e28744092"},
+    {file = "websockets-8.1-cp38-cp38-manylinux1_i686.whl", hash = "sha256:5c01fd846263a75bc8a2b9542606927cfad57e7282965d96b93c387622487485"},
+    {file = "websockets-8.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:9bef37ee224e104a413f0780e29adb3e514a5b698aabe0d969a6ba426b8435d1"},
+    {file = "websockets-8.1-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:d705f8aeecdf3262379644e4b55107a3b55860eb812b673b28d0fbc347a60c55"},
+    {file = "websockets-8.1-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:c8a116feafdb1f84607cb3b14aa1418424ae71fee131642fc568d21423b51824"},
+    {file = "websockets-8.1-cp38-cp38-win32.whl", hash = "sha256:e898a0863421650f0bebac8ba40840fc02258ef4714cb7e1fd76b6a6354bda36"},
+    {file = "websockets-8.1-cp38-cp38-win_amd64.whl", hash = "sha256:f8a7bff6e8664afc4e6c28b983845c5bc14965030e3fb98789734d416af77c4b"},
+    {file = "websockets-8.1.tar.gz", hash = "sha256:5c65d2da8c6bce0fca2528f69f44b2f977e06954c8512a952222cea50dad430f"},
+]
