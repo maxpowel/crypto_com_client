@@ -1,10 +1,17 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=f240117dcd5d8f0bfde9f3eebd91b6e467d52109db7d6b85dce0b231477a7bcd
 language: python
 python:
     - "3.8"
-    - "3.7"
-    - "3.6"
 install: pip install tox-travis
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script: tox
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
   provider: pypi
   user: maxpowel
