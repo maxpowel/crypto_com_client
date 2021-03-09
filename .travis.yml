@@ -15,11 +15,12 @@ jobs:
       install: pip install tox-travis
       script: tox
     - stage: coverage
-      install: pip install coverage pytest
+      install: pip install coverage pytest poetry
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
+        - poetry install
       script: coverage run -m pytest
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
