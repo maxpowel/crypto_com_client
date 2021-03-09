@@ -1,5 +1,9 @@
 Crypto.com websocket api client
 =================================
+[![Build Status](https://travis-ci.org/maxpowel/crypto_com_client.svg?branch=master)](https://travis-ci.org/maxpowel/crypto_com_client)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9c2c51fed72ca3aeacf6/maintainability)](https://codeclimate.com/github/maxpowel/crypto_com_client/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9c2c51fed72ca3aeacf6/test_coverage)](https://codeclimate.com/github/maxpowel/crypto_com_client/test_coverage)
+
 
 This is a low level api client, it just connects the exchange api with your python code in the most simple way.
 Check the official documentation https://exchange-docs.crypto.com/ and the examples directory.

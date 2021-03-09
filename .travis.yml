@@ -1,0 +1,15 @@
+language: python
+python:
+    - "3.8"
+    - "3.7"
+    - "3.6"
+install: pip install tox-travis
+script: tox
+deploy:
+  provider: pypi
+  user: maxpowel
+  password:
+    secure: Kg+Zgo1u5+jbK61zy+9z6FWD/Bumycu1aQFtOn5KY4AtXN1hzlHQQQ6e4VErMuGPQjZXQoz3tyrIUSLS4BG6qrxG4BBXLodWRATT3mq5C30Rsb0Y457MUoRcG68U3KMPhrLMifqsemAqgGN5VaR8KAmI0IYXmcep7e8u3Eu66yC0uUm/snUVcWjvhasHENbhaSCdjILaCSkEpSwus7OGO4Ph80C8bCEv4dbm8fVoEBeG9EK+BtVahHgZ3QQoCklddrqXx0KerE8sS3PhAvraVRlKCt1Z1BVx69JOuoH/pUSZNUeL3++HT2m+dCMq1Kkz/5AjoTOCU3EIa4G0sOTVG78n5qE5+GKwZYb0eBVwuEPnCGukO7j/GXSJ09PrWGQdZEO2AWeaLxSAQD6atIH+BbbSoN/CSrCkuV3qBWoY4PUABJSVdlYqGWxG17+pDjryfkx1m36bEQRogN2uJ+sF4WN5xbh5JBbAK0axk/kD6jowwMV4T9XaCD18ggX1XlIbzggKiBhsnVmrWtwvdXqOcIl3dzqxvTCmg8CT//4s0yJy9or4KsU1QmDZKex5WBSpI+gzHFD5V+VmVeVcgAIwXq0duZYzUm2COIyH+MaVNWxh2iFBaJJGsvokM4qhy1jLy43OvQ5g7A59I2vCyF7EgTPyN9UXaNSc6uwWak7hj6A=
+  distributions: bdist_wheel
+  on:
+    tags: true
