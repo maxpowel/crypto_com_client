@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "crypto_com_client"
+name = "crypto-com-client"
 version = "0.1.1"
 description = "Crypto.com websocket api client"
 authors = ["Alvaro Garcia <maxpowel@gmail.com>"]
