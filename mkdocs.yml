@@ -1,0 +1,5 @@
+site_name: Crypto Com Client
+theme:
+  name: material
+  palette:
+    primary: blue
