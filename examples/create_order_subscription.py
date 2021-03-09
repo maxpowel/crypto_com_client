@@ -1,4 +1,4 @@
-from crypto_com import CryptoClient
+from crypto_com import UserClient
 import asyncio
 import os
 import logging
@@ -6,8 +6,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 async def run():
-    async with CryptoClient(
-            client_type=CryptoClient.USER,
+    async with UserClient(
             api_key=os.environ["API_KEY"],
             api_secret=os.environ["API_SECRET"]
     ) as client:

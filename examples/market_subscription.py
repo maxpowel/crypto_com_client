@@ -1,16 +1,12 @@
-from crypto_com import CryptoClient
+from crypto_com.crypto_com import MarketClient
 import asyncio
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
 async def run():
-    async with CryptoClient(
-            client_type=CryptoClient.MARKET,
-            channels=[
-                "book.CRO_USDC.10"
-            ]
-    ) as client:
+    async with MarketClient() as client:
+        await client.subscribe(["book.CRO_USDC.10"])
         while True:
             event = await client.next_event()
             print(event)
