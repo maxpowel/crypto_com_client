@@ -7,7 +7,7 @@ Crypto.com websocket api client
 
 This is a low level api client, it just connects the exchange api with your python code in the most simple way. Over
 this library, you can build your awesome applications or high level api.
-Check the official documentation https://exchange-docs.crypto.com/ and the examples directory.
+For more information, check the [library documentation](https://maxpowel.github.io/crypto_com_client/), the [official documentation](https://exchange-docs.crypto.com/) and the `examples` directory.
 
 Features
 --------
