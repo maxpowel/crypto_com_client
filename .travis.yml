@@ -12,14 +12,14 @@ before_script:
 script: tox
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-  - rm cc-test-reporter
 before_deploy:
     - mkdocs build --verbose --clean --strict
+    - poetry config pypi-token.pypi $pypi_token
+    - poetry build
 deploy:
-  - provider: pypi
-    user: maxpowel
-    password: $pypi_password
-    distributions: bdist_wheel
+  - provider: script
+    script: poetry publish
+    skip_cleanup: true
     on:
       tags: true
   - provider: pages
