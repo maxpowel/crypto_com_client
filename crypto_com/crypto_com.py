@@ -55,6 +55,7 @@ class CryptoClient:
             next_message = loads(await self.websocket.recv())
             if next_message.get("method") == "public/heartbeat":
                 next_message["method"] = "public/respond-heartbeat"
+                next_message["nonce"] = self.get_nonce()
                 logging.info("Heartbeat")
                 await self.send(next_message)
                 next_message = None
