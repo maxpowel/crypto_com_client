@@ -99,3 +99,4 @@ To run the tests just run `tox`
 
 It will run in first instance `flake8`, then `pylint` and finally `pytest` with code coverage check.
 The only rule ignored is `max-line-length=120` basically because nowadays monitors are big enough for this.
+Websockets import has E0611 disabled because pylint does not process `__all__` correctly
