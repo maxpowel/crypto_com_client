@@ -98,4 +98,4 @@ Tests
 To run the tests just run `tox`
 
 It will run in first instance `flake8`, then `pylint` and finally `pytest` with code coverage check.
-The only rule ignored is `max-line-length=120` basically because nowadays monitors are big enough for this
+The only rule ignored is `max-line-length=120` basically because nowadays monitors are big enough for this.

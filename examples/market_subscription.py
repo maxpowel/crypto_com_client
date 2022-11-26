@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.INFO)
 
 async def run():
     async with MarketClient() as client:
-        await client.subscribe(["book.CRO_USDC.10"])
+        await client.subscribe(["book.BTC_USDT"])
         while True:
             event = await client.next_event()
             print(event)

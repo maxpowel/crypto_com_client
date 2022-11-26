@@ -4,7 +4,9 @@ import hmac
 import hashlib
 import logging
 from typing import List
-import websockets
+# Pylint does not process __all__ correctly
+# pylint: disable=E0611
+from websockets import connect
 from orjson import loads, dumps
 
 
@@ -46,7 +48,7 @@ class CryptoClient:
 
     async def send(self, message):
         """Serialize and send the message"""
-        await self.websocket.send(dumps(message))
+        await self.websocket.send(dumps(message).decode())
 
     async def next_event(self):
         """Wait for the next websocket message"""
@@ -63,7 +65,7 @@ class CryptoClient:
 
     async def __aenter__(self):
         logger.info("Connecting to %s", self.api_url)
-        self.websocket = await websockets.connect(self.api_url)
+        self.websocket = await connect(self.api_url)
         # The api documentation recommend to wait a second in order to void rate-limit error
         time.sleep(1)
         return self
@@ -73,7 +75,7 @@ class CryptoClient:
 
     async def subscribe(self, channels: List[str]):
         """Subscribe to the channels"""
-        logger.info("Subscribing...")
+        logger.info("Subscribing to %s", channels)
         await self.send(self.build_message(
             method="subscribe",
             params={"channels": channels}
