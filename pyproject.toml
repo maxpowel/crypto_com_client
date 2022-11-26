@@ -15,9 +15,9 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-websockets = ">=8.1,<10.0"
-orjson = "^3.5.1"
+python = ">=3.8"
+websockets = "^10"
+orjson = "^3"
 
 [tool.poetry.dev-dependencies]
 
