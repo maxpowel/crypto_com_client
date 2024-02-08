@@ -99,14 +99,15 @@ class AuthenticatedClient(CryptoClient):
     async def authenticate(self):
         """Perform authentication"""
         logger.info("Authenticating...")
-        await self.send(self.build_message(
+        message = self.build_message(
             method="public/auth",
             api_key=self.api_key
-        ))
-
-    async def send(self, message):
-        """Serialize and send the message"""
-        await self.websocket.send(dumps(self.sign_message(message)))
+        )
+        signed_message = dumps(self.sign_message(message))
+        await self.websocket.send(signed_message)
+        auth_event = await self.next_event()
+        if auth_event["code"] != 0:
+            raise Exception(f"Authentication failed with code {auth_event['code']}: {auth_event['message']}. Please check your API KEY and SECRET KEY")
 
 
 class MarketClient(CryptoClient):
