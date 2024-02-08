@@ -1,23 +1,23 @@
 [[package]]
 name = "orjson"
-version = "3.8.2"
+version = "3.9.13"
 description = "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 
 [[package]]
 name = "websockets"
-version = "10.4"
+version = "12.0"
 description = "An implementation of the WebSocket Protocol (RFC 6455 & 7692)"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8"
-content-hash = "37accde874b1f8e74221ecfbc5355e142fcf53377ee2f4f179b595df798c8235"
+content-hash = "9cd3949f61bed4d942cf7b45725ca6d00a521a4227a9d79a92778e8fce5afba9"
 
 [metadata.files]
 orjson = []
