@@ -65,6 +65,7 @@ async def run():
             api_key=os.environ["API_KEY"],
             api_secret=os.environ["API_SECRET"]
     ) as client:
+        await client.authenticate()
         await client.send(
             client.build_message(
                 method="private/get-open-orders",
